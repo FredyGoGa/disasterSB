@@ -18,10 +18,10 @@ h1,
 h2,
 h3 {
   font-family: "Playfair Display", serif;
-  margin: 0 0 2rem 0;
+  margin: 0 0 5rem 0;
 }
 h1 {
-  font-size: 3.8rem;
+  font-size: 5rem;
 }
 @media (min-width: 768px) {
   h1 {
@@ -29,7 +29,7 @@ h1 {
   }
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4rem;
 }
 @media (min-width: 768px) {
   h2 {
@@ -37,7 +37,7 @@ h2 {
   }
 }
 h3 {
-  font-size: 2.4rem;
+  font-size: 3rem;
 }
 @media (min-width: 768px) {
   h3 {
@@ -95,6 +95,7 @@ img {
 .nombre-sitio {
   margin-top: 5rem;
   text-align: center;
+  font-family: "Rubik Wet Paint", cursive;
 }
 .nombre-sitio span {
   color: #037bc0;
@@ -166,6 +167,7 @@ img {
 .categoria {
   margin-bottom: 2rem;
 }
+
 @media (min-width: 768px) {
   .categoria {
     margin-bottom: 0;
@@ -174,8 +176,8 @@ img {
 .categoria img {
   width: 100%;
   height: 220px;
-  overflow: hidden;
 }
+
 .categoria a {
   text-align: center;
   display: block;
@@ -198,15 +200,16 @@ img {
 /** Bloque Nosotros */
 .sobre-nosotros {
   background-image: linear-gradient(
-      to bottom,
+      to right,
       transparent 50%,
       #037bc0 50%,
       #037bc0 100%
     ),
-    url(../img/nosotros.jpg);
-  background-position: center, top left;
+    url(../img/fdp.png);
+  padding: 10rem 0;
+  background-position: left center;
   background-repeat: no-repeat;
-  background-size: 100%, 70rem;
+  background-size: 100%, 120rem;
 }
 
 @media (min-width: 768px) {
@@ -217,10 +220,11 @@ img {
         #037bc0 50%,
         #037bc0 100%
       ),
-      url(../img/nosotros.jpg);
+      url(../img/fdp.png);
     background-position: left center;
+    background-repeat: no-repeat;
     padding: 10rem 0;
-    background-size: 100%, 160rem;
+    background-size: 100%, 120rem;
   }
 }
 .sobre-nosotros-grid {
