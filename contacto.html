@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce - Contacto</title>
+    <title>DisasterSB</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,33 +35,33 @@
     <main class="contenido-principal contenedor ">
         <h2 class="text-center">Contacto</h2>
 
-        <form class="formulario">
+        <form id="formContacto" class="formulario">
             <fieldset>
                 <legend>Tus Datos</legend>
 
                 <div class="campo">
                     <label for="nombre">Nombre: </label>
-                    <input id="nombre" type="text" placeholder="Tu Nombre" required>
+                    <input id="nombre" name="name" type="text" placeholder="Tu Nombre" required>
                 </div>
 
                 <div class="campo">
                     <label for="asunto">Asunto:</label>
-                    <input id="asunto" type="text" placeholder="Tu Asunto" required>
+                    <input id="asunto" name="asunto" type="text" placeholder="Tu Asunto" required>
                 </div>
 
                 <div class="campo">
                     <label for="email">E-mail:</label>
-                    <input id="email" type="email" placeholder="Tu Email">
+                    <input id="email" name="email" type="email" placeholder="Tu Email">
                 </div>
 
                 <div class="campo">
                     <label for="tel">Teléfono:</label>
-                    <input id="tel" type="tel" placeholder="Tu Teléfono">
+                    <input id="tel" name="tel" type="tel" placeholder="Tu Teléfono">
                 </div>
 
                 <div class="campo">
                     <label for="tel">Mensaje:</label>
-                    <textarea id="mensaje" rows="10" cols="20"></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="10" cols="20"></textarea>
                 </div>
 
             </fieldset>
@@ -112,9 +112,9 @@
 
             </fieldset>
 
-            <input onclick="btnOnClick()" class="btn" id="enviarFormulario" type="submit" value="Enviar Formulario">
-            <!-- <button onclick="btnOnClick()" id="enviar">enviar</button> -->
-            <p id="nombreDigitado"></p>
+            <!-- <input onclick="btnOnClick()" class="btn" id="enviarFormulario" type="submit" value="Enviar Formulario"> -->
+            <button type="submit">enviar</button>
+            <!-- <p id="nombreDigitado"></p> -->
         </form>
 
     </main>
@@ -160,7 +160,7 @@
 
         <p class="copyright">Todos los derechos Reservados, TiendaMuebles</p>
     </footer>
-    <script src="prueba.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
