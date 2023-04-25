@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,18 @@
     <title>Ecommerce - Contacto</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
     <header>
         <h1 class="nombre-sitio">Tienda <span> Muebles </span></h1>
     </header>
-    
+
     <div class="contenedor-navegacion">
         <nav class="nav-principal contenedor">
             <a href="index.html">Inicio</a>
@@ -27,37 +31,37 @@
         </nav>
     </div>
 
-    
+
     <main class="contenido-principal contenedor ">
         <h2 class="text-center">Contacto</h2>
 
         <form class="formulario">
             <fieldset>
                 <legend>Tus Datos</legend>
-                
+
                 <div class="campo">
                     <label for="nombre">Nombre: </label>
-                    <input  id="nombre" type="text" placeholder="Tu Nombre" required>
+                    <input id="nombre" type="text" placeholder="Tu Nombre" required>
                 </div>
 
                 <div class="campo">
                     <label for="asunto">Asunto:</label>
-                    <input id="asunto" type="text" placeholder="Tu Asunto"  required>
+                    <input id="asunto" type="text" placeholder="Tu Asunto" required>
                 </div>
 
                 <div class="campo">
                     <label for="email">E-mail:</label>
-                    <input id="email" type="email" placeholder="Tu Email" >
+                    <input id="email" type="email" placeholder="Tu Email">
                 </div>
 
                 <div class="campo">
                     <label for="tel">Teléfono:</label>
-                    <input id="tel" type="tel" placeholder="Tu Teléfono" >
+                    <input id="tel" type="tel" placeholder="Tu Teléfono">
                 </div>
 
                 <div class="campo">
                     <label for="tel">Mensaje:</label>
-                    <textarea rows="10" cols="20"></textarea>
+                    <textarea id="mensaje" rows="10" cols="20"></textarea>
                 </div>
 
             </fieldset>
@@ -83,7 +87,7 @@
 
             <fieldset>
                 <legend>Información Extra</legend>
-                
+
                 <div class="campo">
                     <label for="cliente">Cliente</label>
                     <input id="cliente" type="radio" name="tipo" value="cliente">
@@ -108,9 +112,11 @@
 
             </fieldset>
 
-            <input class="btn" type="submit" value="Enviar Formulario" >
+            <input onclick="btnOnClick()" class="btn" id="enviarFormulario" type="submit" value="Enviar Formulario">
+            <!-- <button onclick="btnOnClick()" id="enviar">enviar</button> -->
+            <p id="nombreDigitado"></p>
         </form>
-        
+
     </main>
 
 
@@ -154,6 +160,7 @@
 
         <p class="copyright">Todos los derechos Reservados, TiendaMuebles</p>
     </footer>
-
+    <script src="prueba.js"></script>
 </body>
+
 </html>
