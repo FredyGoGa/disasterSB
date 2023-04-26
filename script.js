@@ -24,8 +24,8 @@ const parrafoNosotros = document.querySelector(".parrafo");
 // parrafoNosotros.innerText =
 //   "estoy usando .innerText para manipular este elemento desde js ";
 
-formContacto.addEventListener("submit", function (e) {
-  e.preventDefault();
+formContacto.addEventListener("submit", function (evento) {
+  evento.preventDefault();
   console.log("funciona");
   var datos = new FormData(formContacto);
   console.log(datos);

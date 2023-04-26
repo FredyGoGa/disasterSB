@@ -72,7 +72,6 @@ img {
 }
 .btn:hover {
   background-color: #769c02;
-  cursor: pointer;
 }
 
 /** Utilidades */
@@ -110,7 +109,6 @@ img {
   color: #037bc0;
 }
 .contenedor-navegacion {
-  border-top: 0.1rem solid #e1e1e1;
 }
 .nav-principal {
   padding: 2rem 0;
@@ -152,7 +150,6 @@ nav {
 .menu {
   display: flex;
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -260,14 +257,29 @@ nav {
       #037bc0 50%,
       #037bc0 100%
     ),
-    url(../img/);
+    url(../img/logo2.jpg);
   padding: 10rem 0;
   background-position: left;
   background-repeat: no-repeat;
   background-size: 100%, 120rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
+  .sobre-nosotros {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        #037bc0 50%,
+        #037bc0 100%
+      ),
+      url(../img/logo2.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* padding: 10rem 0; */
+  }
+}
+@media (max-width: 767px) {
   .sobre-nosotros {
     background-image: linear-gradient(
         to right,
