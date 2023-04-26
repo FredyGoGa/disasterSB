@@ -9,24 +9,17 @@ const inputAsunto = document.querySelector("#asunto");
 const inputEmail = document.querySelector("#email");
 const inputTelefono = document.querySelector("#tel");
 const inputMensaje = document.querySelector("#mensaje");
-// console.log(
-//   inputNombre.value,
-//   inputAsunto.value,
-//   inputEmail.value,
-//   inputTelefono.value,
-//   inputMensaje.value
-// );
-// const inputEnviarFormulario = document.querySelector("#enviarFormulario");
+const inputEnviar = document.querySelector("#enviar");
 //fin de variables de datos del formulario contacto.
-
 const parrafoNosotros = document.querySelector(".parrafo");
+const inputPais = document.querySelector("#paises");
+const paisSeleccionado = inputPais.value;
 
 // parrafoNosotros.innerText =
 //   "estoy usando .innerText para manipular este elemento desde js ";
 
 formContacto.addEventListener("submit", function (evento) {
   evento.preventDefault();
-  console.log("funciona");
   var datos = new FormData(formContacto);
   console.log(datos);
   console.log(datos.get("name"));
@@ -34,12 +27,15 @@ formContacto.addEventListener("submit", function (evento) {
   console.log(datos.get("email"));
   console.log(datos.get("tel"));
   console.log(datos.get("mensaje"));
+  console.log(paisSeleccionado);
 });
+// function enviarDatosFormulario(event) {
+//   event.preventDefault();
+//   const Nombre = inputNombre.value;
+//   parrafoDigitado.innerText = "Bienvenido: " + Nombre;
+// }
+// formContacto.addEventListener("submit", enviarDatosFormulario);
 
 // inputEnviarFormulario.addEventListener("click", function (event) {
 //   event.preventDefault();
 // });
-// function btnOnClick() {
-//   const Nombre = inputNombre.value;
-//   parrafoDigitado.innerText = "Bienvenido: " + Nombre;
-// }
