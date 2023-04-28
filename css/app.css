@@ -57,6 +57,9 @@ img {
   display: block;
   object-fit: contain;
 }
+.imganimal {
+  max-width: 100%;
+}
 
 .btn {
   background-color: #8cbc00;
@@ -105,11 +108,14 @@ img {
   text-align: center;
   font-family: "Rubik Wet Paint", cursive;
 }
+.inactive {
+  display: none;
+}
 .nombre-sitio span {
   color: #037bc0;
 }
-.contenedor-navegacion {
-}
+/* .contenedor-navegacion {
+} */
 .nav-principal {
   padding: 2rem 0;
   display: flex;
@@ -129,7 +135,7 @@ img {
   }
 }
 
-nav {
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,7 +143,7 @@ nav {
   padding: 15px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   font-family: "Open Sans", sans-serif;
-}
+} */
 
 .logo a {
   font-size: 24px;
@@ -151,6 +157,7 @@ nav {
   display: flex;
   list-style: none;
   padding: 0;
+  margin-right: 20px;
 }
 
 .menu li {
@@ -167,18 +174,22 @@ nav {
   color: #333333;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .menu a:hover {
-  color: #0077cc;
+  color: white;
+  background-color: black;
 }
 
 .hero {
   background-image: url(../img/panoramicaSkatepark.JPG);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center right;
   height: 25rem;
+  object-fit: cover;
 }
 
 .video-background {
@@ -217,6 +228,7 @@ nav {
 }
 .categoria {
   margin-bottom: 2rem;
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
@@ -229,6 +241,8 @@ nav {
   height: 200px;
   align-items: center;
   border-radius: 30px;
+  object-fit: contain;
+  padding: 5px;
 }
 
 .categoria a {
@@ -238,7 +252,7 @@ nav {
   font-size: 2rem;
 }
 .categoria a:hover {
-  background-color: #037bc0;
+  background-color: black;
   color: #ffffff;
   border-bottom-right-radius: 1rem;
 }
@@ -343,7 +357,7 @@ nav {
   }
   .producto:nth-child(2) img,
   .producto:nth-child(3) img {
-    height: 30rem;
+    height: 39rem;
     width: 100%;
     object-fit: cover;
   }
@@ -400,6 +414,9 @@ nav {
   margin-top: 5rem;
   padding-top: 5rem;
 }
+.footer-menu a {
+  display: block;
+}
 .site-footer h3 {
   margin-bottom: 0.5rem;
   text-align: center;
@@ -425,7 +442,7 @@ nav {
 }
 
 .footer-menu a {
-  display: block;
+  display: flex;
   text-align: center;
 }
 @media (min-width: 768px) {
