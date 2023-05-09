@@ -48,6 +48,46 @@ if (formContacto) {
 // }
 // formContacto.addEventListener("submit", enviarDatosFormulario);
 
-// inputEnviarFormulario.addEventListener("click", function (event) {
-//   event.preventDefault();
-// });
+const products = document.querySelectorAll(".btn");
+products.forEach((product) => {
+  product.addEventListener("click", function (event) {
+    Swal.fire({
+      title: "Error!",
+      text: "Do you want to continue",
+      icon: "error",
+      confirmButtonText: "Cool",
+    });
+    event.preventDefault();
+    // Aquí puedes agregar cualquier código adicional que desees ejecutar en lugar del evento predeterminado
+  });
+});
+
+//Array que almacena los productos en el carrito.
+let productItem = [];
+
+//Funcion que agrega un producto al carrito.
+function addToProduct(name, price) {
+  productItem.push({ name: name, price: price });
+  // Actualizar el carrito en la página
+  updateProduct();
+}
+
+// Función que actualiza el carrito en la página
+function updateProduct() {
+  var producList = document.getElementById("cart-items");
+  var producTotal = document.getElementById("cart-total");
+  var total = 0;
+
+  producList.innerHTML = "";
+
+  for (let i = 0; i < productItem.length; i++) {
+    const item = productItem[i];
+
+    var li = document.createElement("li");
+    li.innerText = item.name + " - $" + item.price;
+
+    producList.appendChild(li);
+    total += item.price;
+  }
+  producTotal.innerText = total;
+}

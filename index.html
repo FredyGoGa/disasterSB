@@ -19,6 +19,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="
+        https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js
+        "></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css
+" rel="stylesheet">
+
 </head>
 
 <body>
@@ -120,7 +127,15 @@
 
 
     <main class="contenido-principal contenedor ">
+
         <h2 class="text-center">Nuestros Productos</h2>
+
+        <div id="cart">
+            <h2>Tus productos</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+        </div>
+
 
         <div class="listado-productos">
             <div class="producto">
@@ -131,14 +146,14 @@
                     </h3>
                     <p>Los trucks y las Ruedas Son sujetos a disponibilidad (imagen de referencia)
                         Especificaciones:
-
                         Trucks ( sujeto a disponibilidad).
                         Ruedas (sujeto a disponibilidad)
                         Rodamientos industriales
-                        Shortys</p>
+                        Shortys
+                    </p>
                     <p class="precio">$390.000</p>
 
-                    <a class="btn" href="#">Agregar al Carrito</a>
+                    <a class="btn" onclick="addToProduct('dsSB-Bob', 390000)" href="#">Agregar al Carrito</a>
                 </div> <!-- Info Producto -->
             </div> <!-- Producto -->
 
@@ -149,9 +164,9 @@
                     <h3>Producto 2</h3>
                     <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
                         mauris.</p>
-                    <p class="precio">$1,000,000.00</p>
+                    <p class="precio">$600.000</p>
 
-                    <a class="btn" href="#">Agregar al Carrito</a>
+                    <a class="btn" onclick="addToProduct('Producto 2', 1000000)" href="#">Agregar al Carrito</a>
                 </div> <!-- Info Producto -->
             </div> <!-- Producto -->
 
@@ -162,9 +177,9 @@
                     <h3>Producto 3</h3>
                     <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
                         mauris.</p>
-                    <p class="precio">$1,000,000.00</p>
+                    <p class="precio">$400.000</p>
 
-                    <a class="btn" href="#">Agregar al Carrito</a>
+                    <a class="btn" onclick="addToProduct('Producto 3', 1000000)" href="#">Agregar al Carrito</a>
                 </div> <!-- Info Producto -->
             </div> <!-- Producto -->
 
@@ -175,9 +190,9 @@
                     <h3>Producto 4</h3>
                     <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
                         mauris.</p>
-                    <p class="precio">$1,000,000.00</p>
+                    <p class="precio">$300.000</p>
 
-                    <a class="btn" href="#">Agregar al Carrito</a>
+                    <a class="btn" onclick="addToProduct('Producto 4', 1000000)" href="#">Agregar al Carrito</a>
                 </div> <!-- Info Producto -->
             </div> <!-- Producto -->
 
@@ -188,9 +203,9 @@
                     <h3>Producto 5</h3>
                     <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
                         mauris.</p>
-                    <p class="precio">$1,000,000.00</p>
+                    <p class="precio">$200.000</p>
 
-                    <a class="btn" href="#">Agregar al Carrito</a>
+                    <a class="btn" onclick="addToProduct('Producto 5', 1000000)" href="#">Agregar al Carrito</a>
                 </div> <!-- Info Producto -->
             </div> <!-- Producto -->
 
@@ -201,9 +216,9 @@
                     <h3>Producto 6</h3>
                     <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec
                         mauris.</p>
-                    <p class="precio">$1,000,000.00</p>
+                    <p class="precio">$100.000</p>
 
-                    <a class="btn" href="#">Agregar al Carrito</a>
+                    <a class="btn" onclick="addToProduct('Producto 6', 1000000)" href="#">Agregar al Carrito</a>
                 </div> <!-- Info Producto -->
             </div> <!-- Producto -->
 

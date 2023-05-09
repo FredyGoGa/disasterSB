@@ -11,7 +11,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   line-height: 2;
-  background-image: url("/img/fondoOscuro.jpg");
+  /* background-image: url("/img/fondoOscuro.jpg"); */
 }
 
 /* Globales */
@@ -173,13 +173,13 @@ img {
 }
 
 .menu a {
-  /* font-size: 16px;
+  font-size: 16px;
   font-weight: 600;
   color: #333333;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   padding: 5px;
-  border-radius: 10px; */
+  border-radius: 10px;
 }
 
 .menu a:hover {
