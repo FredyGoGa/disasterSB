@@ -51,11 +51,24 @@ if (formContacto) {
 const products = document.querySelectorAll(".btn");
 products.forEach((product) => {
   product.addEventListener("click", function (event) {
+    let productItem = "";
     Swal.fire({
-      title: "Error!",
-      text: "Do you want to continue",
-      icon: "error",
-      confirmButtonText: "Cool",
+      title: "Agregar producto?",
+      text: "Se agregara este producto al carrito de compras, esta seguro?",
+      html: productItem,
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Si, agregar!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          "Agregado!",
+          "Se añadio producto al carrito de compras.",
+          "success"
+        );
+      }
     });
     event.preventDefault();
     // Aquí puedes agregar cualquier código adicional que desees ejecutar en lugar del evento predeterminado
