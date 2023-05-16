@@ -15,15 +15,24 @@ const inputEnviar = document.querySelector("#enviar");
 const inputPais = document.querySelector("#paises");
 // const paisSeleccionado = inputPais.value;
 const logoUp = document.querySelector(".logoUP");
+const carritoIcon = document.getElementById("CarritoIcon");
+const contenedorProductos = document.getElementById("menuProducts");
 
-const nombreSitio = document.querySelector(".inactive");
-if (logoUp) {
-  logoUp.addEventListener("click", toggleLogoUp);
+carritoIcon.addEventListener("click", toggleProductos);
 
-  function toggleLogoUp() {
-    nombreSitio.classList.toggle(".inactive");
-  }
+function toggleProductos() {
+  console.log("click");
+  contenedorProductos.classList.toggle("inactive");
 }
+
+// const nombreSitio = document.querySelector(".inactive");
+// if (logoUp) {
+//   logoUp.addEventListener("click", toggleLogoUp);
+
+//   function toggleLogoUp() {
+//     nombreSitio.classList.toggle(".inactive");
+//   }
+// }
 
 // parrafoNosotros.innerText =
 //   "estoy usando .innerText para manipular este elemento desde js ";
