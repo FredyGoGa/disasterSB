@@ -21,7 +21,6 @@ const contenedorProductos = document.getElementById("menuProducts");
 carritoIcon.addEventListener("click", toggleProductos);
 
 function toggleProductos() {
-  console.log("click");
   contenedorProductos.classList.toggle("inactive");
 }
 
