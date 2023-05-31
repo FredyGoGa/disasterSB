@@ -22,6 +22,8 @@ carritoIcon.addEventListener("click", toggleProductos);
 
 function toggleProductos() {
   contenedorProductos.classList.toggle("inactive");
+ {
+  }
 }
 
 // const nombreSitio = document.querySelector(".inactive");
@@ -57,6 +59,7 @@ if (formContacto) {
 // formContacto.addEventListener("submit", enviarDatosFormulario);
 
 const products = document.querySelectorAll(".btn");
+
 products.forEach((product) => {
   product.addEventListener("click", function (event) {
     let productItem = "";
@@ -87,7 +90,7 @@ products.forEach((product) => {
 let productItem = [];
 
 //Funcion que agrega un producto al carrito.
-function addToProduct(name, price) {
+function addToProduct(name, price, image) {
   productItem.push({ name: name, price: price });
   // Actualizar el carrito en la página
   updateProduct();
