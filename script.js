@@ -26,17 +26,7 @@ function toggleProductos() {
   }
 }
 
-// const nombreSitio = document.querySelector(".inactive");
-// if (logoUp) {
-//   logoUp.addEventListener("click", toggleLogoUp);
 
-//   function toggleLogoUp() {
-//     nombreSitio.classList.toggle(".inactive");
-//   }
-// }
-
-// parrafoNosotros.innerText =
-//   "estoy usando .innerText para manipular este elemento desde js ";
 if (formContacto) {
   formContacto.addEventListener("submit", function (evento) {
     evento.preventDefault();
