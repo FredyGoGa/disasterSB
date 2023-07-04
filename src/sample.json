@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "nombre": "Fredy",
+        "apellidos":"Gonzalez Garcia",
+        "especialidas":"stret",
+        "edad":35,
+        "departamento":"Cundinamarca"
+    },
+    {
+        "id":2,
+        "nombre": "Camilo",
+        "apellidos":"Romero Gelvez",
+        "especialidas":"bowl",
+        "edad":30,
+        "departamento":"Bpyacá" 
+    }
+]
