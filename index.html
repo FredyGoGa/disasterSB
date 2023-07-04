@@ -68,12 +68,15 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css
 
         </ul>
 
-
     </nav>
+
     <div id="menuProducts" class="inactive menuProduct">
-        <h2>Tus productos</h2>
-        <ul id="cart-items"></ul>
-        <p>Total: $<span id="cart-total">0</span></p>
+        <div class="menuProductsContainer">
+            <h2 class="tusProductos">Tus productos</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0</span></p>
+        </div>
+        
 
     </div>
 
@@ -277,6 +280,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css
         </div>
 
         <p class="copyright">Todos los derechos Reservados, Desarrollado por Fredy Gonzalez Garcia</p>
+        <p id="api"></p>    
     </footer>
 
     <script src="script.js"></script>

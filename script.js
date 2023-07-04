@@ -17,13 +17,49 @@ const inputPais = document.querySelector("#paises");
 const logoUp = document.querySelector(".logoUP");
 const carritoIcon = document.getElementById("CarritoIcon");
 const contenedorProductos = document.getElementById("menuProducts");
+const apiPrueba = document.getElementById('api');
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Aquí va tu código que accede al elemento carritoIcon
+  const carritoIcon = document.getElementById('CarritoIcon');
+
+  // Verificar si el elemento existe antes de acceder a su propiedad
+  if (carritoIcon) {
+    carritoIcon.addEventListener('click', function() {
+      // Acciones al hacer clic en el icono del carrito
+      console.log("elemento existe!!")
+    });
+  }
+});
+
+// const URL  = "https://api.thecatapi.com/v1/images/search?limit=10";
+
+fetch(URL)
+  .then(response => response.json())
+  .then(data => { 
+   
+      const imagen = document.createElement('img');
+      imagen.src = data[0].url;
+      apiPrueba.appendChild(imagen);
+
+      })    
+
+  .catch(error => {
+    console.error('Error al obtener los datos de la API:', error);
+  });
+
+
+
 
 carritoIcon.addEventListener("click", toggleProductos);
 
 function toggleProductos() {
   contenedorProductos.classList.toggle("inactive");
- {
-  }
+
 }
 
 

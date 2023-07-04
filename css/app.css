@@ -143,6 +143,12 @@ p {
   font-size: 18px;
   margin-bottom: 40px;
 }
+.menuProductsContainer{
+  background-color: #8cbc00;
+}
+.tusProductos{
+ border-bottom-color: #e1e1e1;
+}
 @media (min-width: 768px) {
   .nav-principal {
     justify-content: space-between;
@@ -252,6 +258,7 @@ p {
 .categoria {
   margin-bottom: 2rem;
   border-radius: 5px;
+  border-style: double;
 }
 
 @media (min-width: 768px) {
@@ -277,8 +284,7 @@ p {
 .categoria a:hover {
   background-color: black;
   color: #ffffff;
-  border-bottom-right-radius: 1rem;
-}
+border-radius: 5px;}
 @media (min-width: 768px) {
   .listado-categorias {
     display: grid;
