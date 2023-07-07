@@ -1,0 +1,36 @@
+[
+    "products",
+    {
+        "id": 1,
+        "nombre": "Tabla de skate",
+        "marca": "SkateCo",
+        "descripción": "Tabla de skate profesional con diseño de alta calidad.",
+        "precio": 99.99,
+        "disponible": true
+    },
+    {
+        "id": 2,
+        "name": "Ruedas de skate",
+        "brand": "Wheelz",
+        "description": "Ruedas duraderas y resistentes para skateboarding street.",
+        "price": 29.99,
+        "available": true
+    },
+    {
+        "id": 3,
+        "name": "Rodamientos ABEC-7",
+        "brand": "Speedy",
+        "description": "Rodamientos de alta velocidad para skateboarding.",
+        "price": 14.99,
+        "available": true
+    },
+    {
+        "id": 4,
+        "name": "Trucks para skate",
+        "brand": "GrindKing",
+        "description": "Trucks resistentes para ejercicios de skateboarding en rampa.",
+        "price": 49.99,
+        "available": false
+    }
+
+]

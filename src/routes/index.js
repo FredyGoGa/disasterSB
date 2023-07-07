@@ -3,13 +3,13 @@ const router = Router();
 
 
 
-router.get('/', (req, res) =>{
-    res.json({"Title":"datos de mi servidor local"});
+router.get('/skaters', (req, res) =>{
+    res.send('skaters de la sabana');
 });
 
-router.get('/skaters', (req, res) =>{
+router.get('/products', (req, res) =>{
  
-    res.send('skaters');
+    res.send('productos');
 });
  
 

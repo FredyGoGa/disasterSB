@@ -15,7 +15,9 @@ app.use(express.json());
 
 //routes
 app.use(require('./routes/index'));
-app.use(require('./routes/skaters'));
+app.use('/api/skaters',require('./routes/skaters'));
+app.use('/api/products',require('./routes/products'));
+
 
 
 //starting server
